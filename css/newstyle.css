@@ -1,8 +1,7 @@
 /* style, reborn. */
 
 .title {
-	margin:15rem 0 8rem;
-	text-align:center;
+	margin:8rem 0 8rem;
 }
 
 .navbar {
@@ -18,7 +17,7 @@
 .selected {
  	background-color:#000;
   	color:#fff;
-  	outline:0; 
+  	outline:0;
 }
 
 .centered {
@@ -42,9 +41,7 @@
 	margin:0 0 3rem;
 }
 
-/* contrast colouring
+/* contrast colouring */
 div {
-	border:1px solid #25FC05; 
+	border:1px solid #25FC05;
 }
-*/
- 
