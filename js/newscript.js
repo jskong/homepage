@@ -1,5 +1,5 @@
 function changeTarget(tabNum) {
-	// reset selection
+	// reset button/connector selection
 	for (i=0; i<4; i++) {
 		document.getElementById('connector' + i).style.visibility = 'hidden';
 		document.getElementById('button' + i).className =
@@ -15,7 +15,7 @@ function changeTarget(tabNum) {
 	// make connector visible
 	document.getElementById('connector' + tabNum).style.visibility = 'visible';
 
-	// change content
+	// change textbox content
 	var target = document.getElementById('target');
 	var content = document.getElementById('tab' + tabNum).innerHTML;
 	target.innerHTML = content;
@@ -55,6 +55,7 @@ function fadeIn(elemID) {
     }
     return;
 }
+
 /*
 var failures = 0;
 var successes = 0;

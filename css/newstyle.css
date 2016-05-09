@@ -2,6 +2,7 @@
 
 .title {
 	margin:8rem 0 8rem;
+	text-align:center;
 }
 
 .navbar {
@@ -41,7 +42,12 @@
 	margin:0 0 3rem;
 }
 
-/* contrast colouring */
+.invisible {
+	display:none;
+}
+
+/* contrast colouring
 div {
 	border:1px solid #25FC05;
 }
+ */
