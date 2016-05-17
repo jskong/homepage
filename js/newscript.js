@@ -24,37 +24,51 @@ function changeTarget(tabNum) {
 
 }
 
-function fadeOut(elemID) {
-    var elem = document.getElementById(elemID);
-    var opacity = 1.0;
-    var id = setInterval(frame, 6);
+function fadeIn(elemID, speed) {
+  var elem = document.getElementById(elemID);
+	var opacity = 0;
+  var id = setInterval(frame, 5);
 
-    function frame() {
-        if (opacity == 0.0) {
-            clearInterval(id);
-        } else {
-            opacity -= 0.05;
-            elem.style.opacity = opacity;
-        }
-    }
-    return;
+  function frame() {
+    if (opacity >= 1.0) {
+      clearInterval(id);
+    } else {
+			opacity += speed;
+      elem.style.opacity = opacity;
+		}
+	}
+  return;
 }
 
-function fadeIn(elemID) {
-    var elem = document.getElementById(elemID);
-    var opacity = 0.0;
-    var id = setInterval(frame, 6);
+function fadeOut(elemID, speed) {
+  var elem = document.getElementById(elemID);
+	var opacity = 1;
+  var id = setInterval(frame, 5);
 
-    function frame() {
-        if (opacity == 1.0) {
-            clearInterval(id);
-        } else {
-            opacity += 0.05;
-            elem.style.opacity = opacity;
-        }
-    }
-    return;
+  function frame() {
+    if (opacity <= 0) {
+      clearInterval(id);
+    } else {
+			opacity -= speed;
+      elem.style.opacity = opacity;
+		}
+	}
+  return;
 }
+
+// fade in elements
+fadeIn("title_img", 0.01);
+fadeIn("navbar", 0.005);
+fadeIn("footer", 0.0025);
+
+// fade in, jquery style
+/*
+$(document).ready(function(){
+  $("title_img").fadeIn(1000);
+  $("navbar").fadeIn(2000);
+  $("footer").fadeIn(3000);
+});
+*/
 
 /*
 var failures = 0;
