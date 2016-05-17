@@ -3,6 +3,8 @@
 
 <head>
 	<title>Jillian Kong</title>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/jqueryscript.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/newskeleton.css">
 	<link rel="stylesheet" type="text/css" href="css/newstyle.css">
@@ -15,39 +17,34 @@
 </head>
 
 <body>
-<script src="js/jquery-1.12.3.min.js"></script>
 
 <!-- Title -->
-<div class="title" id="title_img">
-	<div class="container">
+<div class="container">
+	<div class="u-full-width title" id="title_img">
 		<img height="300" width="534" src="images/signature.jpg">
 	</div>
 </div>
 
 <!-- Navbar -->
-<div class="navbar" id="navbar">
-	<div class="container">
+<div class="container">
+	<div class="navbar" id="navbar">
 
 		<div class="buttons">
 			<div class="three columns">
-				<button type="button" onclick="changeTarget(0)"
-				id="button0">About</button>
+				<button type="button" id="button0">About</button>
 			</div>
 			<div class="three columns">
-				<button type="button" onclick="changeTarget(1)"
-				id="button1">Portfolio</button>
+				<button type="button" id="button1">Portfolio</button>
 			</div>
 			<div class="three columns">
-				<button type="button" onclick="changeTarget(2)"
-				id="button2">Resum&eacute</button>
+				<button type="button" id="button2">Resum&eacute</button>
 			</div>
 			<div class="three columns">
-				<button type="button" onclick="changeTarget(3)"
-				id="button3">Contact</button>
+				<button type="button" id="button3">Contact</button>
 			</div>
 		</div>
 
-		<div class="lines">
+		<div class="connectors">
 			<div class="three columns">
 				<div class="connector" id="connector0"></div>
 			</div>
@@ -72,25 +69,27 @@
 	</div>
 </div>
 
-<div class="invisible" id="tab0">
+<!-- Tab Content -->
+
+<div class="hidden" id="tab0">
 <h2>About</h2>
 <p>Jillian Kong is a (developing) developer and student, residing in Vancouver, BC. Currently, she is in her second year of study at the University of British Columbia, where she is pursuing a degree in Cognitive Science and working as a TA for an introductory computer science course. When she is not working or studying, she can be found webmaster-ing for the <a href="http://www.rotaract5040.org/vanubc/">Rotaract Club of Vancouver-UBC</a>, singing in the UBC Women's Choir, or awkwardly dancing.</p>
 <p>Originally from Calgary, Jillian enjoys breakfast food, 20th century literature, and attempting to make the web a more beautiful and dynamically resizeable place.</p>
 </div>
 
-<div class="invisible" id="tab1">
+<div class="hidden" id="tab1">
 <h2>Portfolio</h2>
 <p>Coming Soon</p>
 </div>
 
-<div class="invisible" id="tab2">
+<div class="hidden" id="tab2">
 <h2>Resum&eacute</h2>
 <p>View Jillian's resum&eacute <a href="assets/coop_resume.pdf" target="_blank">here</a>.
 </div>
 
-<div class="invisible" id="tab3">
+<div class="hidden" id="tab3">
 <h2>Contact</h2>
-<p>Email me at jilliankong.alumni.ubc.ca</p>
+<p>Email me at jillian.kong@alumni.ubc.ca</p>
 <p>Find me on <a href="http://ca.linkedin.com/in/jilliankong" target="_blank">LinkedIn</a></p>
 <p>Check my code via <a href="https://github.com/jskong" target="_blank">GitHub</a></p>
 </div>
@@ -102,16 +101,11 @@
 	</div>
 	<div class="centered one-half column">
 		<a href="https://github.com/jskong" target="_blank">
-		<p>https://github.com/jskong</p>
-
-
+			<p>https://github.com/jskong</p>
 		</a>
 	</div>
 </div>
 </footer>
-
-<script src="js/newscript.js"></script>
-
 </body>
 
 </html>

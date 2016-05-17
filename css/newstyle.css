@@ -5,7 +5,7 @@
 	text-align:center;
 }
 
-#title_img, #navbar, #footer {
+.invisible {
 	opacity:0;
 }
 
@@ -46,7 +46,7 @@
 	margin:0 0 3rem;
 }
 
-.invisible {
+.hidden {
 	display:none;
 }
 
