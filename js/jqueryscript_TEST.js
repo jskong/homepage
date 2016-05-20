@@ -15,13 +15,18 @@ $(document).ready(function(){
   $("#button2").on("click", {tabNum:2}, changeTab);
   $("#button3").on("click", {tabNum:3}, changeTab);
 
-  $(".thumbnail").on("hover", highlight);
+  $("h2").hover(portIn, portOut);
 
 });
 
-function highlight() {
-  console.log("is this thing on?")
-  $(this).animate({opacity:0.2}, 500);
+function portIn(event) {
+  console.log("portIn triggered")
+  $(this).animate({opacity:0.2}, 300);
+}
+
+function portOut(event) {
+  console.log("portOut triggered")
+  $(this).animate({opacity:1}, 300);
 }
 
 $(".thumbnail").hover(function(){
