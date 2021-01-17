@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/jskong/public_html
+    - /bin/cp -R assets $DEPLOYPATH/assets
+    - /bin/cp -R css $DEPLOYPATH/css
+    - /bin/cp -R js $DEPLOYPATH/js
+    - /bin/cp index.html $DEPLOYPATH
