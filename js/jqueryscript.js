@@ -5,16 +5,18 @@ $(document).ready(function(){
   $("#footer").addClass("invisible");
 
   // fade in, title first
-  $("#title_img").animate({opacity:1}, 1000, function(){
-    $("#navbar").animate({opacity:1}, 900);
-    $("#footer").animate({opacity:1}, 900);
+  $("#title_img").animate({opacity:1}, 900, function(){
+    $("#navbar").animate({opacity:1}, 600);
+    $("#footer").animate({opacity:1}, 600);
   });
 
+  // wire up the buttons to the tabs
   $("#button0").on("click", {tabNum:0}, changeTab);
   $("#button1").on("click", {tabNum:1}, changeTab);
   $("#button2").on("click", {tabNum:2}, changeTab);
   $("#button3").on("click", {tabNum:3}, changeTab);
 
+  // set hover animations on header/buttons
   $("h2").hover(portIn, portOut);
 
 });
@@ -31,7 +33,7 @@ function portOut(event) {
 
 $(".thumbnail").hover(function(){
   console.log("is this thing on?")
-  $(this).animate({opacity:0.2}, 500);
+  $(this).animate({opacity:0.2}, 300);
 });
 
 function changeTab(event) {
